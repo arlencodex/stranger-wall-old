@@ -761,12 +761,6 @@
   </style>
 </head>
 <body>
-  <button onclick="gohome()">Go Home</button>
-  <script>
-    function gohome(){
-      window.location.href="index.html";
-    }
-  </script>
 
   <!-- NAV -->
   <div class="nav">
@@ -782,7 +776,7 @@
       <div class="chat-count-pill" id="chat-count-pill">Chat #<span id="chat-num">1</span></div>
     </div>
     <div class="nav-right">
-      <button class="nav-btn" onclick="goHome()">← home</button>
+      <button class="nav-btn" onclick="window.location.href='index.html'">← home</button>
     </div>
   </div>
 
@@ -883,7 +877,7 @@
       <h3>Stranger disconnected</h3>
       <p>They left the wall. It happens. The conversation was real while it lasted — now find a new one.</p>
       <div class="disc-btns">
-        <button class="disc-btn-next" onclick="startSearch()">Next Stranger →</button>
+        <button class="disc-btn-next" onclick="goHome()">Next Stranger →</button>
         <button class="disc-btn-home" onclick="gohome()">Go Home</button>
       </div>
     </div>
